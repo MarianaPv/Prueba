@@ -7,10 +7,10 @@ const cors = require("cors");
 
 const SELECT_ALL_TRUCKS = "SELECT * FROM camiones";
 const connection = mysql.createConnection({
-  host: "camiones.cegoasvw0wpw.us-east-1.rds.amazonaws.com",
+  host: "localhost",
   user: "root",
-  database: "camiones",
-  password: "password",
+  database: "sys",
+  password: "Lol69dsbhf613",
 });
 
 let coordinates;

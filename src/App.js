@@ -33,7 +33,7 @@ function App() {
   }, [historic]);
 
   const getInfo = () => {
-    fetch("http://ec2-54-172-1-171.compute-1.amazonaws.com:5000/coords")
+    fetch("http://localhost:5000/coords")
       .then((res) => res.json())
       .then((data) => {
         let { data1 } = data;
@@ -51,7 +51,7 @@ function App() {
     <div
       style={{
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "column",
         height: "100vw",
         overflowY: "hidden",
       }}
@@ -66,6 +66,7 @@ function App() {
           flexDirection: "row",
           height: "100%",
           filter: welcomeParty ? "blur(1.6px)" : "blur(0px)",
+          backgroundColor: "rgb(224, 229, 240)",
         }}
       >
         <div className="claseUno">
@@ -74,28 +75,26 @@ function App() {
           >
             Los datos actuales de su producto son:
           </div>
-          <div className="coordenadas">
-            <div
-              style={{ color: color, fontWeight: "bolder", fontSize: "20px" }}
-            >
-              Latitud:{" "}
-              {historic.length > 0 && historic[historic.length - 1].latitud}
-            </div>
-            <div
-              style={{ color: color, fontWeight: "bolder", fontSize: "20px" }}
-            >
-              Longitud:{" "}
-              {historic.length > 0 && historic[historic.length - 1].longitud}
-            </div>
-            <div
-              style={{ color: color, fontWeight: "bolder", fontSize: "20px" }}
-            >
-              Fecha y Hora:{" "}
-              {historic.length > 0 && historic[historic.length - 1].date}
-            </div>
-          </div>
+          <table className="tableClosed">
+            <tr>
+              <th>Latitud</th>
+              <th>Longitud</th>
+              <th>Fecha y Hora</th>
+            </tr>
+            <tr>
+              <td>
+                {historic.length > 0 && historic[historic.length - 1].latitud}
+              </td>
+              <td>
+                {historic.length > 0 && historic[historic.length - 1].longitud}
+              </td>
+              <td>
+                {historic.length > 0 && historic[historic.length - 1].date}
+              </td>
+            </tr>
+          </table>
         </div>
-        <div className="dive">
+        <div className="dive1">
           <Map
             className="map"
             center={[

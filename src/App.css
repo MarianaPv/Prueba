@@ -4,7 +4,6 @@
 }
 
 .claseUno {
-  position: relative;
   display: flex;
   flex-direction: column;
   height: 10%;
@@ -27,13 +26,34 @@
 div.map.leaflet-container.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag {
   height: 45%;
   width: 85%;
-  margin-right: 7vw;
-  margin-left: 45vw;
+
+  margin-top: 2vh;
+  margin-left: 6vw;
 }
 
-.dive {
+.dive1 {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
+}
+
+.tableClosed {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-top: 5vh;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
