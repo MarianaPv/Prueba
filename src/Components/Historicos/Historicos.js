@@ -89,7 +89,7 @@ function Historicos() {
             display: "flex",
             height: "87vh",
             flexDirection: "column",
-            marginLeft: "8.5vw",
+            marginLeft: "9vw",
           }}
         >
           <Map

@@ -7,10 +7,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 30vh;
-  width: 20%;
+  height: 100;
+  width: 1vw;
 
-  margin-right: 1.3vw;
+  margin-right: 0vw;
   margin-top: 0vw;
 }
 
@@ -20,8 +20,9 @@
 }
 
 div.map1.leaflet-container.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag {
-  height: 70vh;
-  width: 87vw;
+  height: 75%;
+  width: 50vw;
+  margin-top: 5vh;
 }
 
 div.react-datepicker__time-box {

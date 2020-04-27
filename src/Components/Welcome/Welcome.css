@@ -1,21 +1,51 @@
 .welcome {
   display: flex;
-  flex-direction: row;
-  margin-left: 10vw;
-  margin-top: 10vh;
+  flex-direction: column;
+
+  margin-top: 3vh;
   opacity: 1.8;
 }
 
+.parentWelcome {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  z-index: 1000;
+  background-color: rgb(208, 215, 233);
+  margin-left: 25%;
+  margin-top: 20%;
+  border-radius: 1em;
+}
+.buttonWrapper {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+}
+
 .botonwel {
-  position: relative;
-  height: 5vh;
+  height: 100%;
   font-family: "Courier New", Courier, monospace;
   font-size: 13px;
-  background-color: rgb(184, 184, 184);
+  background-color: #121b26;
   border-radius: 10px;
   transition: 0.5s;
-  top: 4.5vh;
-  left: 5vw;
+  color: white;
   margin-left: 0vw;
   font-weight: bold;
+  width: 20%;
+}
+.botonwel:hover {
+  transition: 0.5s;
+  background-color: #3b4e66;
+}
+
+.textStyle1 {
+  margin-top: 0;
+  text-align: center;
+  font-family: "helvetica";
 }
