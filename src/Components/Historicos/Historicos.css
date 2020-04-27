@@ -21,7 +21,7 @@
 
 div.map1.leaflet-container.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag {
   height: 75%;
-  width: 50vw;
+  width: 100%;
   margin-top: 5vh;
 }
 

@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    setColor(color === "blue" ? "black" : "blue");
+    setColor(color === "blue" ? "black" : "red");
     console.log(historic);
   }, [historic]);
 
@@ -51,7 +51,7 @@ function App() {
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "row",
         height: "100vw",
         overflowY: "hidden",
       }}
@@ -63,24 +63,36 @@ function App() {
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
           height: "100%",
-          filter: welcomeParty ? "blur(1.5px)" : "blur(0px)",
+          filter: welcomeParty ? "blur(1.6px)" : "blur(0px)",
         }}
       >
         <div className="claseUno">
-          <div style={{ color: color, fontWeight: "bolder" }}>{message}</div>
-          <div style={{ color: color, fontWeight: "bolder" }}>
-            Latitud:{" "}
-            {historic.length > 0 && historic[historic.length - 1].latitud}
+          <div
+            style={{ color: "black", fontWeight: "bolder", fontSize: "20px" }}
+          >
+            Los datos actuales de su producto son:
           </div>
-          <div style={{ color: color, fontWeight: "bolder" }}>
-            Longitud:{" "}
-            {historic.length > 0 && historic[historic.length - 1].longitud}
-          </div>
-          <div style={{ color: color, fontWeight: "bolder" }}>
-            Fecha y Hora:{" "}
-            {historic.length > 0 && historic[historic.length - 1].date}
+          <div className="coordenadas">
+            <div
+              style={{ color: color, fontWeight: "bolder", fontSize: "20px" }}
+            >
+              Latitud:{" "}
+              {historic.length > 0 && historic[historic.length - 1].latitud}
+            </div>
+            <div
+              style={{ color: color, fontWeight: "bolder", fontSize: "20px" }}
+            >
+              Longitud:{" "}
+              {historic.length > 0 && historic[historic.length - 1].longitud}
+            </div>
+            <div
+              style={{ color: color, fontWeight: "bolder", fontSize: "20px" }}
+            >
+              Fecha y Hora:{" "}
+              {historic.length > 0 && historic[historic.length - 1].date}
+            </div>
           </div>
         </div>
         <div className="dive">

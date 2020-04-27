@@ -1,5 +1,5 @@
 .leaflet-container {
-  width: 400px;
+  width: 300px;
   height: 100%;
 }
 
@@ -8,22 +8,32 @@
   display: flex;
   flex-direction: column;
   height: 10%;
-  margin-left: 5vw;
+  width: 28%;
+  margin-top: 10vh;
+  margin-left: 9vw;
+  font-family: "Roboto";
 }
 
-.map {
+.coordenadas {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 55%;
-  width: 70%;
-  margin-left: 30vw;
+  height: 10%;
   margin-top: 5vh;
+  width: 100%;
+  font-family: "Roboto";
+}
+
+div.map.leaflet-container.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag {
+  height: 45%;
+  width: 85%;
+  margin-right: 7vw;
+  margin-left: 45vw;
 }
 
 .dive {
   display: flex;
-  flex-direction: row;
-  height: 87%;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
 }
