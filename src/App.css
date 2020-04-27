@@ -1,0 +1,29 @@
+.leaflet-container {
+  width: 400px;
+  height: 100%;
+}
+
+.claseUno {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  margin-left: 5vw;
+}
+
+.map {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  width: 70%;
+  margin-left: 30vw;
+  margin-top: 5vh;
+}
+
+.dive {
+  display: flex;
+  flex-direction: row;
+  height: 87%;
+  width: 100%;
+}

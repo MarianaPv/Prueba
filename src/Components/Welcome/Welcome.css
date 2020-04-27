@@ -1,0 +1,21 @@
+.welcome {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  opacity: 1.8;
+}
+
+.botonwel {
+  position: relative;
+  height: 5vh;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  background-color: rgb(184, 184, 184);
+  border-radius: 10px;
+  transition: 0.5s;
+  top: 4.5vh;
+  left: 5vw;
+  margin-left: 0vw;
+  font-weight: bold;
+}
